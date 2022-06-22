@@ -1,0 +1,43 @@
+Flask is a web application framework written in Python. Armin Ronacher
+Flask is based on Werkzeug WSGI toolkit and Jinja2 template engine.
+Since it does not need any tools or libraries, we can also call it a micro-framework.
+
+WSGI (Web Server Gateway Interface)– A standard for Python web application development. WSGI is a specification for a universal interface between the web server and the web applications.
+
+Werkzeug– A WSGI toolkit implementing requests, response objects, and other utility functions.
+
+Jinja2
+Jinja 2– A Python templating engine, Jinja2 is a popular templating engine for Python. A web templating system combines a template with a certain data source to render dynamic web pages.
+
+
+
+Web Application Framework or simply Web Framework represents a collection of libraries and modules that enables a web application developer to write applications without having to bother about low-level details such as protocols, thread management etc.
+
+
+Flask does not have built-in abstraction layer for database handling, nor does it have form a validation support. Instead, Flask supports the extensions to add such functionality to the application
+
+==========================================================================================
+
+@app.route('/flask')
+def hello_flask():
+   return 'Hello Flask'
+
+@app.route('/python/')
+def hello_python():
+   return 'Hello Python'
+
+Both the rules appear similar but in the second rule, trailing slash (/) is used. As a result, it becomes a canonical URL. Hence, using /python or /python/ returns the same output. However, in case of the first rule, /flask/ URL results in 404 Not Found page.
+
+
+A canonical URL is the URL of the best representative page from a group of duplicate pages, according to Google. For example, if you have two URLs for the same page (such as example.com? dress=1234 and example.com/dresses/1234 ), Google chooses one as canonical.
+
+==========================================================================================
+
+
+Commands:
+    
+>>> pip install flask
+
+>>> python -m flask run
+
+>>> python app.py
